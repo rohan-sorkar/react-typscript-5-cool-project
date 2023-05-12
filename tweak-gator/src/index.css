@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .featured-card{
+        @apply bg-gray-800 text-center text-white max-w-[150px] p-6 rounded-lg space-y-2;
+    }
+    .listing-card{
+        @apply bg-[#2a3042] p-3 sm:p-6 rounded-xl flex items-center gap-3 sm:gap-8 relative;
+    }
+    .input{
+        @apply w-[193px] sm:w-full outline-none bg-[#2a3042] pl-9  sm:px-14 py-3 rounded-full caret-slate-500 placeholder:text-sm sm:placeholder:text-lg sm:placeholder:font-bold text-green-500 font-medium;
+    }
+    .input-icon{
+        @apply absolute top-4 left-3 sm:left-6 text-[#5a04ca] pointer-events-none;
+    }
+}

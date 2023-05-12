@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+.app{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px;
+}
+h1, h2, h4 {
+  color: rgb(88, 87, 87);
+}
+
+.history_container{
+  border: 1px solid rgb(201, 198, 198);
+  border-radius: 20px;
+  padding: 25px 25px 50px 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 0px 15px;
+}
+input{
+  border: 2px solid rgb(109, 86, 86);
+  padding: 5px 60px 5px 30px;
+  outline: none;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+button{
+  padding: 0px 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.clear_btn{
+  padding: 3px 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  /* background-color: rgb(247, 137, 137); */
+  background-color: rgb(246, 209, 216);
+  border-color: rgb(249, 98, 115);
+  border-radius: 8px;
+}
+.restore_btn{
+  padding: 3px 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  /* background-color: rgb(164, 132, 3); */
+  background-color: rgb(152, 131, 144);
+  border-radius: 8px;
+}
+.history_heading{
+  margin-top: 30px;
+}
+.result_heading{
+  margin-bottom: 16px;
+  text-shadow: -0.01em -0.01em 0.01em #000;
+animation: result_heading 2s ease-in-out 0.5s forwards;
+  color: #333;
+}
+.history {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 20px;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: rgb(248, 248, 244);
+}
+
+@keyframes result_heading {
+to {
+  text-shadow: 0em 0.01em #ff5, 0em 0.02em #ff5, 0em 0.02em 0.03em #ff5,
+    -0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
+    -0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
+    -0.03em -0.03em 0.03em #000;
+  transform: translateY(-0.025em) translateX(0.04em);
+}
+}
